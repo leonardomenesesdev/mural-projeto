@@ -37,3 +37,13 @@
 .header-list:hover {
     background-color: darkviolet;
 }
+
+/* Padronizar imagens em section-projetos */
+.section-projetos .card img {
+    width: 100%; /* Ajusta a largura para ocupar todo o espaço do contêiner */
+    max-width: 500px; /* Define um limite máximo de largura */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorção */
+    border-radius: 10px; /* (Opcional) Adiciona bordas arredondadas */
+    margin: 10px 0; /* Espaçamento entre as imagens */
+}

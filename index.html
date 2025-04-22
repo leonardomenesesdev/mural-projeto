@@ -6,13 +6,43 @@
     <title>Mural Capacita</title>
     <link rel="stylesheet" href="index.css"></link>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/7dea42_2870bf039f244b359f0335343a34f5af%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/7dea42_2870bf039f244b359f0335343a34f5af%7Emv2.png" type="image/png">
 </head>
 <body>
     <header class="header-mural">
         <img src="./imagens/Captura de tela 2025-04-16 101932.png"/>
         <h1 class="header-h1">Mural de Projetos</h1>
         <a href="https://www.atlanticoavanti.com.br/" target="_blank" class="header-list">Sobre</a>
-        <a href="" class="header-list">Contato</a>
+        <a href="#section2" class="header-list">Contato</a>
     </header>
+    <main>
+        <section class="section-projetos">
+            <h1>Projetos - Ciclo 1</h1>
+            <div class="container">
+                <div class="card">
+                    <h2>Vivere+</h2>
+                    <img src="./imagens/image.png">
+                    <img src="./imagens/image.png">
+            </div>
+        </section>
+        <section class="section-contato" id="section2">
+            <h1>Contato</h1>
+            <form class="contato-form">
+                <div class="secao-form">
+                    <label>Nome: </label>
+                    <input type="text" id="name" name="name" required/>
+                </div>
+                <div class="secao-form">
+                    <label>Email: </label>
+                    <input type="email" id="email" name="email" required/>
+                </div>
+                <div class="secao-form">
+                    <label>Mensagem: </label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
