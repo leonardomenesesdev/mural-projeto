@@ -9,35 +9,93 @@
     <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/7dea42_2870bf039f244b359f0335343a34f5af%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/7dea42_2870bf039f244b359f0335343a34f5af%7Emv2.png" type="image/png">
 </head>
 <body>
-    <header class="header-mural">
-        <img src="./imagens/Captura de tela 2025-04-16 101932.png"/>
-        <h1 class="header-h1">Mural de Projetos</h1>
-        <a href="https://www.atlanticoavanti.com.br/" target="_blank" class="header-list">Sobre</a>
-        <a href="#section2" class="header-list">Contato</a>
+    <header>
+        <div class="header-container">
+            <img src="https://static.wixstatic.com/media/8ecd9a_6d2ed19df9b0470d9522319a25ce7dea~mv2.png/v1/fill/w_102,h_41,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Sem-t%C3%ADtulo-2.png" alt="Logo Atlântico Avanti" />
+            
+            <h1 class="header-h1">Mural de Projetos</h1>
+    
+            <div class="header-buttons">
+                <a href="https://www.atlanticoavanti.com.br/" target="_blank" class="header-list">Sobre</a>
+                <a href="#section2" class="header-list">Contato</a>
+            </div>
+        </div>
     </header>
+    
+    
     <main>
-        <section class="section-projetos">
-            <h1>Projetos - Ciclo 1</h1>
-            <div class="container">
-                <div class="card">
+            <section class="section-projetos">
+                <h1>Ciclo 1</h1>
+
+                <div class="conteudo">
+                <div class="container">
                     <h2>Vivere+</h2>
-                    <img src="./imagens/image.png">
-                    <img src="./imagens/image.png">
+                    <br>
+                    <hr>
+                    <h3 class="container-h3">Algumas imagens:</h3>
+                    <div class="card">
+                        <div class="quadro">
+                            <img src="./imagens/loginpage.png" alt="Página de login do projeto">
+                        </div>
+                        <div class="quadro">
+                            <img src="./imagens/cadastropage.png" alt="Página de cadastro do projeto">
+                        </div>
+                        <div class="quadro">
+                            <img src="./imagens/homecomdados.png" alt="Home page do projeto">
+                        </div>
+                        <div class="quadro">
+                            <img src="./imagens/detalhes.png" alt="Página de detalhes de um evento">
+                        </div>
+                    </div>
+            
+                <button class="button-avulso">
+                        <a class="link-avulso" target="_blank" href="https://www.linkedin.com/posts/davidericson00_desenvolvimentoweb-fullstack-react-activity-7316515592906166272-GmKT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEju6Z0BcfJX3yYXxvU-PPDoFcIRGnseYm4">
+                            Demonstração completa
+                        </a>
+                </button>
+            </div>
+            <div class="conteudo">
+                <div class="container">
+                    <h2>Vivere+</h2>
+                    <br>
+                    <hr>
+                    <h3 class="container-h3">Algumas imagens:</h3>
+                    <div class="card">
+                        <div class="quadro">
+                            <img src="./imagens/loginpage.png" alt="Página de login do projeto">
+                        </div>
+                        <div class="quadro">
+                            <img src="./imagens/cadastropage.png" alt="Página de cadastro do projeto">
+                        </div>
+                        <div class="quadro">
+                            <img src="./imagens/homecomdados.png" alt="Home page do projeto">
+                        </div>
+                        <div class="quadro">
+                            <img src="./imagens/detalhes.png" alt="Página de detalhes de um evento">
+                        </div>
+                    </div>
+            
+                <button class="button-avulso">
+                        <a class="link-avulso" target="_blank" href="https://www.linkedin.com/posts/davidericson00_desenvolvimentoweb-fullstack-react-activity-7316515592906166272-GmKT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEju6Z0BcfJX3yYXxvU-PPDoFcIRGnseYm4">
+                            Demonstração completa
+                        </a>
+                </button>
             </div>
         </section>
+        
         <section class="section-contato" id="section2">
             <h1>Contato</h1>
             <form class="contato-form">
                 <div class="secao-form">
-                    <label>Nome: </label>
+                    <label for="name">Nome: </label>
                     <input type="text" id="name" name="name" required/>
                 </div>
                 <div class="secao-form">
-                    <label>Email: </label>
+                    <label for="email">Email: </label>
                     <input type="email" id="email" name="email" required/>
                 </div>
                 <div class="secao-form">
-                    <label>Mensagem: </label>
+                    <label for="message">Mensagem: </label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
                 <button type="submit">Enviar</button>

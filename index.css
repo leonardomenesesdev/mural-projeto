@@ -6,25 +6,52 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Header Styles */
-.header-mural {
-    display: flex;
-    background-color: black;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+body {
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #2C0C3F, #5D147B, #A33265);
+    color: whitesmoke;
 }
 
-.header-h1 {
-    color: aliceblue;
-    text-align: center;
-    font-weight: 700;
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #2C0C3F, #5D147B);
+    padding: 10px 20px;
+}
+
+/* Container flex que alinha tudo */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
     width: 100%;
 }
 
-/* Button Styles */
+/* Logo à esquerda */
+.header-container img {
+    height: 40px;
+}
+
+/* Título centralizado */
+.header-h1 {
+    color: aliceblue;
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Botões à direita */
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilo dos botões */
 .header-list {
-    margin: 10px;
     text-decoration: none;
     color: white;
     background-color: blueviolet;
@@ -38,12 +65,73 @@
     background-color: darkviolet;
 }
 
-/* Padronizar imagens em section-projetos */
-.section-projetos .card img {
-    width: 100%; /* Ajusta a largura para ocupar todo o espaço do contêiner */
-    max-width: 500px; /* Define um limite máximo de largura */
-    height: auto; /* Mantém a proporção da imagem */
-    object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorção */
-    border-radius: 10px; /* (Opcional) Adiciona bordas arredondadas */
-    margin: 10px 0; /* Espaçamento entre as imagens */
+/* Seção de Projetos */
+.section-projetos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-projetos h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* Layout dos Cards */
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Estilo dos Quadros */
+.quadro {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagens */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+.container-h3{
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.button-avulso {
+    margin-top: 30px;
+    background-color: #EB5C5D;           /* Cor vermelha suave do botão */
+    padding: 12px 25px;                  /* Espaçamento interno mais confortável */
+    border: none;                        /* Sem bordas externas */
+    border-radius: 999px;                /* Deixa o botão bem arredondado */
+    cursor: pointer;                     /* Cursor de mão ao passar o mouse */
+    display: inline-block;               /* Permite centralizar o link dentro */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra leve para destacar */
+}
+
+.button-avulso:hover {
+    background-color: #d94e4f;          /* Um tom mais escuro no hover */
+}
+
+.link-avulso {
+    text-decoration: none;
+    color: #fff;                         /* Fonte branca */
+    font-weight: 500;
+    font-size: 18px;
+    display: block;                      /* Permite centralizar o texto */
+    text-align: center;
+}
+.conteudo{
+    margin: 20px;
 }
