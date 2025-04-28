@@ -16,7 +16,9 @@ body {
 header {
     background: linear-gradient(135deg, #2C0C3F, #5D147B);
     padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 
 /* Container flex que alinha tudo */
 .header-container {
@@ -104,7 +106,6 @@ header {
 }
 .container-h3{
     margin-top: 20px;
-    margin-left: 240px;
     margin-bottom: 20px;
     text-align: left;
 }
@@ -133,5 +134,116 @@ header {
     text-align: center;
 }
 .conteudo{
-    margin: 20px;
+    margin: 40px;
+}
+main{
+    display: flex; /* Ativa o Flexbox no body */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    margin: 0;
+}
+.section-contato {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 50px 10px #000000;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #2C0C3F, #5D147B);
+    text-align: center;
+    width: 100%;
+}
+
+.section-contato h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: whitesmoke;
+}
+
+.contato-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.secao-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.secao-form label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.secao-form input,
+.secao-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: whitesmoke;
+    font-size: 16px;
+    resize: none;
+}
+
+.secao-form input::placeholder,
+.secao-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contato-form button {
+    background-color: #EB5C5D;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contato-form button:hover {
+    background-color: #d94e4f;
+}
+.button-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px; /* largura fixa */
+    height: 50px; /* altura igual à largura */
+    background-color: #EB5C5D;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px; /* um pouquinho maior pra caber bem */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+
+    /* alinhamento interno com flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-up:hover {
+    background-color: #d94e4f;
+}
+
+.button-up a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
 }
