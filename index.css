@@ -67,6 +67,31 @@ header {
     background-color: darkviolet;
 }
 
+.sumario {
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 5px auto;
+    max-width: 600px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .sumario a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+  
+  .sumario a:hover {
+    color: #0077cc;
+  }
+  
 /* Seção de Projetos */
 .section-projetos {
     padding: 50px 20px;
@@ -125,6 +150,7 @@ header {
     background-color: #d94e4f;          /* Um tom mais escuro no hover */
 }
 
+
 .link-avulso {
     text-decoration: none;
     color: #fff;                         /* Fonte branca */
@@ -136,6 +162,120 @@ header {
 .conteudo{
     margin: 40px;
 }
+.tecnologias {
+    padding: 40px 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .tecnologias h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: aliceblue;
+  }
+  
+  .lista-tecnologias {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    counter-reset: item;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .lista-tecnologias > li {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    position: relative;
+  }
+  
+  .lista-tecnologias > li::before {
+    counter-increment: item;
+    content: counter(item) ". ";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #EB5C5D;
+  }
+  
+  .lista-tecnologias h4 {
+    font-size: 1.3rem;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    color: #EB5C5D;
+  }
+  
+  .lista-tecnologias ul {
+    list-style: disc;
+    padding-left: 30px;
+    margin: 0;
+  }
+  
+  .lista-tecnologias li ul li {
+    margin: 6px 0;
+  }
+  
+  .lista-tecnologias a {
+    text-decoration: none;
+    color: aliceblue;
+    transition: color 0.2s;
+  }
+  
+  .lista-tecnologias a:hover {
+    color: #0077cc;
+  }
+  .membros {
+    padding: 20px 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  
+  .membros h3 {
+    font-size: 1.5rem;
+    color: aliceblue;
+    margin-bottom: 25px;
+  }
+  
+  .membros ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .membros li {
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .membros li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .membros a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 1rem;
+    display: block;
+  }
+  
+  .membros a:hover {
+    color: #0077cc;
+  }
+  
+  
 main{
     display: flex; /* Ativa o Flexbox no body */
     flex-direction: column; /* Organiza os elementos em coluna */
@@ -246,4 +386,8 @@ main{
     text-decoration: none;
     color: whitesmoke;
     text-align: center;
+}
+
+.redes a{
+  margin: 10px;
 }
